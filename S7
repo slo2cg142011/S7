@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="utf-8" />
+	
+	<script type="text/javascript">
+	
+		function milenakilometry()
+		{
+			var mile = document.getElementById("mile").value;
+			
+			document.getElementById("wynik").innerHTML=mile*1.60;
+		
+		}
+
+        function kilometrynamile()
+        {
+            var kilometry = document.getElementById("kilometry").value;
+
+            document.getElementById("w").innerHTML=kilometry*0.62;
+        }
+	
+	</script>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+    <h2>Przelicz mile na kilometry</h2>
+	<input type="text" id="mile" />
+	<input type="submit" value="Przelicz" onclick="milenakilometry()"/>
+	
+	<div id="wynik"></div>
+    <br/>
+    <h2>Przelicz kilometry na mile</h2>
+    <input type="text" id="kilometry"/>
+    <input type="submit" value="Przelicz" onclick="kilometrynamile()">
+    <div id="w"></div>
+
+</body>
+
+</html>
